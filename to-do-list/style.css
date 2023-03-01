@@ -1,0 +1,176 @@
+html {
+    font-size: 10px;
+    /* Now 1rem = 10px */
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Helvetica, sans-serif;
+}
+body {
+  background-image: url("todo.jpg");
+   background-size: 1200px;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.time_date {
+    display: flex;
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    align-items: center;
+    flex-direction: column;
+} 
+.todo_app{
+    width: 100%;
+    display: flex;
+    margin-left: 5rem;
+    align-items: center;
+    flex-direction: column;
+}
+.greetings {
+    font-size: 1.5rem;
+    color: rgb(255, 254, 254);
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-top: 2rem;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.2rem;
+}
+
+.showdatetime {
+    color:rgb(255, 255, 255);
+    width: 40rem;
+    padding: 1rem 1rem;
+}
+.date {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+.time {
+    margin-top: 1rem;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.1rem;
+}
+.time span:not(:last-child){
+    position: relative;
+    margin: 0 0.6rem;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.1rem;
+}
+.time span:last-child{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+  color: rgb(255, 255, 255);
+  margin: 5rem 1.5rem;
+}
+#create_task {
+    width: 40rem;
+    position: relative;
+    background-color: rgb(179, 187, 203);
+    padding: 2rem 2rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 2rem 2.8rem rgba(242, 243, 245, 0.15);
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.6rem;
+  }
+  #create_task input {
+    font-size: 2rem;
+    border: none;
+    border-bottom: 0.2rem solid black;
+    padding: 1.4rem 0.8rem;
+    color: black;
+    font-weight: 500;
+  }
+  #create_task input:focus {
+    outline: none;
+    border-color: black;
+  }
+  #create_task button {
+    font-weight: 600;
+    font-size: 1.7rem;
+    background-color: rgb(62, 62, 109);
+    color:rgb(255, 255, 255);
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  .delete_task {
+    background-color: red;
+  }
+  .edit_task {
+    background-color: rgb(139, 238, 93);
+    margin-left: auto;
+    margin-right: 4rem;
+  }
+  .task_completed {
+    text-decoration: line-through;
+  }
+  #todo_list {
+    background-color:rgb(207, 207, 207);
+    position: relative;
+    padding: 1.2rem 2rem;
+    margin-top: 2rem;
+    width: 40rem;
+    box-shadow: 0 2rem 2.4rem rgba(1, 24, 48, 0.15);
+    border-radius: 0.4rem;
+  }
+  .task_list {
+    background-color: rgb(254, 254, 254);
+    padding: 0.4rem 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.2rem solid black;
+    cursor: pointer;
+  }
+  .task_list span {
+    font-family: 'Times New Roman', Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .task_list button {
+    color: rgb(255, 255, 255);
+    padding: 1.2rem 0;
+    width: 4rem;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  #delete_all {
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 1rem;
+    background-color: rgb(254, 43, 43);
+    color:white;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 5rem;
+    display: none;
+  }
+
+  
